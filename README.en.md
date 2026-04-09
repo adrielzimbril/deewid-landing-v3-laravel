@@ -12,7 +12,7 @@ Laravel version of Deewid. This repository extends the static front-end versions
 - Deewid landing rendered with Blade
 - `home`, `pricing`, `company`, `blog`, `store-not-found`, and `store-unavailable` pages
 - Laravel application base for future product work
-- reserved application routes for `https://deewid-landing-v3-laravel.adrielzimbril.com/`
+- reserved application routes for `https://deewid-landing-v3.adrielzimbril.com/`
 
 ## Stack
 
@@ -48,7 +48,7 @@ php artisan test
 ## Notes
 
 - The app domain uses `DEEWID_APP_DOMAIN` from `.env`.
-- The current public V3 URL is `https://deewid-landing-v3-laravel.adrielzimbril.com/`.
+- The current public V3 URL is `https://deewid-landing-v3.adrielzimbril.com/`.
 
 ## Render
 
@@ -66,7 +66,7 @@ php artisan test
   Preview: `https://adrielzimbril.github.io/deewid-landing-v2/`
 - `deewid-landing-v3-laravel`
   Repo: `https://github.com/adrielzimbril/deewid-landing-v3-laravel`
-  Live app: `https://deewid-landing-v3-laravel.adrielzimbril.com/`
+  Live app: `https://deewid-landing-v3.adrielzimbril.com/`
 
 ## Maintainer
 
@@ -78,4 +78,5 @@ Maintained by Oricodes.
 ## License
 
 MIT. See `LICENSE`.
+
 

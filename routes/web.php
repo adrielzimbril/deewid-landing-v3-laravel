@@ -23,9 +23,10 @@ Route::view('/store-not-found', 'content.store-not-found')->name('store.not-foun
 Route::view('/store-unavailable', 'content.store-unavailable')->name('store.unavailable');
 
 
-Route::domain(env('DEEWID_APP_DOMAIN', 'deewid-landing-v3-laravel.adrielzimbril.com'))->name('deewid.')->group(function () {
+Route::domain(env('DEEWID_APP_DOMAIN', 'deewid-landing-v3.adrielzimbril.com'))->name('deewid.')->group(function () {
   Route::get('/', fn() => redirect()->route('home'))->name('home');
   Route::get('login', fn() => redirect()->route('home'))->name('login');
   Route::get('register', fn() => redirect()->route('home'))->name('register');
 });
+
 
