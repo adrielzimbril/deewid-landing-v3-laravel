@@ -54,8 +54,10 @@ php artisan test
 
 - The repository includes `Dockerfile`, `.dockerignore`, `render-start.sh`, and `render.yaml`.
 - The Docker runtime is aligned to PHP 8.4 to match locked dependency requirements.
-- `APP_KEY` and `DATABASE_URL` must be configured in Render.
-- If you still get `500`, check first: `APP_KEY`, `DATABASE_URL`, and that the latest deploy used the updated Docker image.
+- `APP_KEY` must be configured in Render.
+- The preset [`.env.render`](F:/laragon/www/larawid/.env.render) is configured to run without an external database (local SQLite).
+- `DEEWID_BLOG_DATABASE_ENABLED=false` disables DB-backed blog routes to avoid runtime database errors.
+- If you still get `500`, check first: `APP_KEY` and that the latest deploy used the updated Docker image.
 
 ## Deewid versions
 

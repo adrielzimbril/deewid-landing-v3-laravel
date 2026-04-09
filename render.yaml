@@ -15,7 +15,9 @@ services:
       - key: DEEWID_APP_DOMAIN
         value: deewid-landing-v3.adrielzimbril.com
       - key: DB_CONNECTION
-        value: pgsql
+        value: sqlite
+      - key: DB_DATABASE
+        value: /var/www/html/database/database.sqlite
       - key: LOG_CHANNEL
         value: stderr
       - key: LOG_LEVEL
@@ -27,6 +29,10 @@ services:
       - key: QUEUE_CONNECTION
         value: sync
       - key: DATABASE_URL
-        sync: false
+        value: ""
       - key: APP_KEY
         sync: false
+      - key: RUN_MIGRATIONS
+        value: "false"
+      - key: DEEWID_BLOG_DATABASE_ENABLED
+        value: "false"

@@ -9,13 +9,25 @@ use Illuminate\Support\Facades\Route;
 // Main Page Route
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::prefix('blog')->name('blog.')->group(function () {
-  Route::get('/', [BlogController::class, 'index'])->name('index');
-  Route::get('/post/{slug}', [BlogController::class, 'post'])->name('post');
-  Route::get('/tag/{slug}', [BlogController::class, 'tag'])->name('tag');
-  Route::get('/author/{slug}', [BlogController::class, 'author'])->name('author');
-  Route::get('/category/{slug}', [BlogController::class, 'category'])->name('category');
-});
+$blogDatabaseEnabled = filter_var(env('DEEWID_BLOG_DATABASE_ENABLED', false), FILTER_VALIDATE_BOOL);
+
+if ($blogDatabaseEnabled) {
+  Route::prefix('blog')->name('blog.')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('index');
+    Route::get('/post/{slug}', [BlogController::class, 'post'])->name('post');
+    Route::get('/tag/{slug}', [BlogController::class, 'tag'])->name('tag');
+    Route::get('/author/{slug}', [BlogController::class, 'author'])->name('author');
+    Route::get('/category/{slug}', [BlogController::class, 'category'])->name('category');
+  });
+} else {
+  Route::prefix('blog')->name('blog.')->group(function () {
+    Route::get('/', fn() => redirect()->route('home'))->name('index');
+    Route::get('/post/{slug}', fn() => redirect()->route('home'))->name('post');
+    Route::get('/tag/{slug}', fn() => redirect()->route('home'))->name('tag');
+    Route::get('/author/{slug}', fn() => redirect()->route('home'))->name('author');
+    Route::get('/category/{slug}', fn() => redirect()->route('home'))->name('category');
+  });
+}
 
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
