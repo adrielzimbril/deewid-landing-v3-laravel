@@ -16,6 +16,9 @@
             <a class="nav-link" href="{{ route('pricing') }}">{{ __('Pricing') }}</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store State') }}</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('blog.index') }}">{{ __('Blog') }}</a>
           </li>
         </ul>
@@ -61,6 +64,10 @@
 
         <li class="nav-item">
           <a class="nav-link" href="{{ route('pricing') }}">{{ __('Pricing') }}</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store State') }}</a>
         </li>
 
         <li class="nav-item">

@@ -10,7 +10,7 @@ Laravel version of Deewid. This repository extends the static front-end versions
 ## Scope
 
 - Deewid landing rendered with Blade
-- `home`, `pricing`, `company`, and `blog` pages
+- `home`, `pricing`, `company`, `blog`, `store-not-found`, and `store-unavailable` pages
 - Laravel application base for future product work
 - reserved application routes for `app.deewid.com`
 - connected foundation for the previous static versions
@@ -51,6 +51,13 @@ php artisan test
 - The app subdomain uses `DEEWID_APP_DOMAIN` from `.env`.
 - The `app.deewid.com` routes currently redirect to the public home page until the actual application area is implemented.
 - The planned application URL is `https://app.deewid.com/`.
+
+## Render
+
+- The repository now includes a root `Dockerfile`, `.dockerignore`, `render-start.sh`, and `render.yaml` for a Render Docker deployment flow.
+- The recommended setup uses Render PostgreSQL with `DB_CONNECTION=pgsql` and `DATABASE_URL`.
+- `APP_KEY` and `DATABASE_URL` must be configured in Render environment variables.
+- If you want automatic migrations on boot, set `RUN_MIGRATIONS=true`.
 
 ## Deewid versions
 

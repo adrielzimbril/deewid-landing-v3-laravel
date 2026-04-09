@@ -19,6 +19,8 @@ Route::prefix('blog')->name('blog.')->group(function () {
 
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
+Route::view('/store-not-found', 'content.store-not-found')->name('store.not-found');
+Route::view('/store-unavailable', 'content.store-unavailable')->name('store.unavailable');
 
 
 Route::domain(env('DEEWID_APP_DOMAIN', 'app.deewid.com'))->name('deewid.')->group(function () {
