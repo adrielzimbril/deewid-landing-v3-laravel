@@ -1,6 +1,10 @@
 ﻿FROM php:8.4-cli-bookworm AS composer
 WORKDIR /app
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git unzip curl libpq-dev libzip-dev libonig-dev libicu-dev \
+    && docker-php-ext-install pdo pdo_pgsql pdo_mysql mbstring bcmath intl zip \
+    && rm -rf /var/lib/apt/lists/*
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
 
