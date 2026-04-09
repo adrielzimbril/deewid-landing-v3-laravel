@@ -77,9 +77,9 @@
 
         <li class="nav-item">
           <a class="nav-link" href="{{ route('store.not-found') }}">{{ __('Store Not Found') }}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store Unavailable') }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store Unavailable') }}</a>
         </li>
 
         <li class="nav-item">
