@@ -1,4 +1,4 @@
-<header class="light fixed top-0 inset-x-0 flex items-center z-40 w-full lg:bg-transparent bg-white transition-all py-5"
+﻿<header class="light fixed top-0 inset-x-0 flex items-center z-40 w-full lg:bg-transparent bg-white transition-all py-5"
         id="navbar">
   <div class="container md:p-0">
     <nav class="flex items-center">
@@ -16,7 +16,10 @@
             <a class="nav-link" href="{{ route('pricing') }}">{{ __('Pricing') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store State') }}</a>
+            <a class="nav-link" href="{{ route('store.not-found') }}">{{ __('Store Not Found') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store Unavailable') }}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('blog.index') }}">{{ __('Blog') }}</a>
@@ -67,7 +70,10 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store State') }}</a>
+          <a class="nav-link" href="{{ route('store.not-found') }}">{{ __('Store Not Found') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('store.unavailable') }}">{{ __('Store Unavailable') }}</a>
         </li>
 
         <li class="nav-item">
@@ -86,3 +92,4 @@
     </div>
   </div>
 </div>
+

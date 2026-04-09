@@ -1,6 +1,6 @@
-# Deewid Landing V3 Laravel
+﻿# Deewid Landing V3 Laravel
 
-Laravel version of Deewid. This repository extends the static front-end versions into a Laravel 11 application base with Livewire, while preserving the existing marketing sections and preparing a future app-ready ecommerce stack.
+Laravel version of Deewid. This repository extends the static front-end versions into a Laravel 11 application base with Livewire.
 
 ## Preview
 
@@ -12,8 +12,7 @@ Laravel version of Deewid. This repository extends the static front-end versions
 - Deewid landing rendered with Blade
 - `home`, `pricing`, `company`, `blog`, `store-not-found`, and `store-unavailable` pages
 - Laravel application base for future product work
-- reserved application routes for `app.deewid.com`
-- connected foundation for the previous static versions
+- reserved application routes for `deewid-landing-v3-laravel.adrielzimbril.com`
 
 ## Stack
 
@@ -48,16 +47,14 @@ php artisan test
 
 ## Notes
 
-- The app subdomain uses `DEEWID_APP_DOMAIN` from `.env`.
-- The `app.deewid.com` routes currently redirect to the public home page until the actual application area is implemented.
-- The planned application URL is `https://app.deewid.com/`.
+- The app domain uses `DEEWID_APP_DOMAIN` from `.env`.
+- The current public V3 URL is `https://deewid-landing-v3-laravel.adrielzimbril.com/`.
 
 ## Render
 
-- The repository now includes a root `Dockerfile`, `.dockerignore`, `render-start.sh`, and `render.yaml` for a Render Docker deployment flow.
-- The recommended setup uses Render PostgreSQL with `DB_CONNECTION=pgsql` and `DATABASE_URL`.
-- `APP_KEY` and `DATABASE_URL` must be configured in Render environment variables.
-- If you want automatic migrations on boot, set `RUN_MIGRATIONS=true`.
+- The repository includes `Dockerfile`, `.dockerignore`, `render-start.sh`, and `render.yaml`.
+- The Docker runtime is aligned to PHP 8.4 to match locked dependency requirements.
+- `APP_KEY` and `DATABASE_URL` must be configured in Render.
 
 ## Deewid versions
 
@@ -69,8 +66,7 @@ php artisan test
   Preview: `https://adrielzimbril.github.io/deewid-landing-v2/`
 - `deewid-landing-v3-laravel`
   Repo: `https://github.com/adrielzimbril/deewid-landing-v3-laravel`
-  Preview: not applicable
-  Future app URL: `https://app.deewid.com/`
+  Live app: `https://deewid-landing-v3-laravel.adrielzimbril.com/`
 
 ## Maintainer
 

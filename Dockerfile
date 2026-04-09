@@ -1,4 +1,4 @@
-FROM composer:2 AS composer
+﻿FROM composer:2 AS composer
 WORKDIR /app
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
@@ -12,7 +12,7 @@ COPY public ./public
 COPY tailwind.config.js postcss.config.js vite.config.mjs ./
 RUN npm run build
 
-FROM php:8.2-cli-bookworm
+FROM php:8.4-cli-bookworm
 WORKDIR /var/www/html
 
 RUN apt-get update \
@@ -33,3 +33,4 @@ ENV APP_DEBUG=false
 EXPOSE 10000
 
 CMD ["./render-start.sh"]
+

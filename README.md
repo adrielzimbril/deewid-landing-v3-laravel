@@ -1,6 +1,6 @@
-# Deewid Landing V3 Laravel
+﻿# Deewid Landing V3 Laravel
 
-Version Laravel de Deewid. Ce depot prolonge les versions front statiques en une base applicative Laravel 11 avec Livewire, en conservant les sections marketing existantes et en preparant une evolution vers une vraie app e-commerce.
+Version Laravel de Deewid. Ce depot prolonge les versions front statiques en une base applicative Laravel 11 avec Livewire.
 
 ## Apercu
 
@@ -12,8 +12,7 @@ Version Laravel de Deewid. Ce depot prolonge les versions front statiques en une
 - landing Deewid rendue avec Blade
 - pages `home`, `pricing`, `company`, `blog`, `store-not-found` et `store-unavailable`
 - base Laravel pour faire evoluer le produit
-- routes d'application reservees pour `app.deewid.com`
-- socle relie aux versions statiques precedentes
+- routes d'application reservees pour `deewid-landing-v3-laravel.adrielzimbril.com`
 
 ## Stack
 
@@ -49,15 +48,13 @@ php artisan test
 ## Notes
 
 - Le sous-domaine app utilise `DEEWID_APP_DOMAIN` dans `.env`.
-- Les routes `app.deewid.com` sont actuellement des redirections placeholder vers la home publique tant que l'espace applicatif n'est pas encore implemente.
-- L'URL cible prevue pour l'espace applicatif est `https://app.deewid.com/`.
+- L'URL publique actuelle de la V3 est `https://deewid-landing-v3-laravel.adrielzimbril.com/`.
 
 ## Render
 
-- Le repo inclut maintenant un `Dockerfile` racine, un `.dockerignore`, un `render-start.sh` et un `render.yaml` adaptes a un deploiement Render en runtime Docker.
-- La configuration recommande Render PostgreSQL avec `DB_CONNECTION=pgsql` et `DATABASE_URL`.
-- `APP_KEY` et `DATABASE_URL` doivent etre renseignes dans les variables d'environnement Render.
-- Si tu veux appliquer les migrations au boot sur Render, active `RUN_MIGRATIONS=true`.
+- Le repo inclut un `Dockerfile`, `.dockerignore`, `render-start.sh` et `render.yaml`.
+- Le runtime Docker est aligne sur PHP 8.4 pour etre compatible avec les dependances lockees.
+- `APP_KEY` et `DATABASE_URL` doivent etre renseignes dans Render.
 
 ## Versions Deewid
 
@@ -69,8 +66,7 @@ php artisan test
   Preview: `https://adrielzimbril.github.io/deewid-landing-v2/`
 - `deewid-landing-v3-laravel`
   Repo: `https://github.com/adrielzimbril/deewid-landing-v3-laravel`
-  Preview: non applicable
-  Future app URL: `https://app.deewid.com/`
+  Live app: `https://deewid-landing-v3-laravel.adrielzimbril.com/`
 
 ## Maintenance
 
