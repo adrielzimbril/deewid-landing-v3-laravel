@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "icon": "shop",
+      "name": "One-Click Store Launch",
+      "description": "Initiate your online store with a single click, streamlining the setup process for users."
+    },
+    {
+      "icon": "slider-minimalistic-horizontal",
+      "name": "Effortless Product Listing",
+      "description": "Simplify the product listing process with user-friendly interfaces, making it easy to manage products."
+    },
+    {
+      "icon": "share-circle",
+      "name": "Abandoned Cart Recovery",
+      "description": "Automated abandoned cart recovery, capturing potential sales and reducing revenue loss."
+    },
+    {
+      "icon": "statistic",
+      "name": "Real-time Sales Analytics",
+      "description": "Real-time analytics for comprehensive insights into sales performance and customer actions."
+    }
+  ]
+}
+

@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "icon": "envelope-fill",
+      "name": "Email Marketing",
+      "description": "Integrate popular email marketing tools."
+    },
+    {
+      "icon": "aligne-middle2-fill",
+      "name": "SEO Optimization",
+      "description": "Boost your store's visibility on search engines."
+    },
+    {
+      "icon": "globus",
+      "name": "Multi-Language",
+      "description": "Make your store accessible globally."
+    },
+    {
+      "icon": "sale",
+      "name": "Dynamic Pricing",
+      "description": "Adjust prices based on market trends."
+    }
+  ]
+}
+

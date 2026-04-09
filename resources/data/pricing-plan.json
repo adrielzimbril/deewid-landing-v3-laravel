@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "name": "Free Plan",
+      "price": "0",
+      "description": "Try with free forever",
+      "buttonText": "Try for free",
+      "isMostPopular": false,
+      "features": [
+        "yourstore.mydeewid.com",
+        "1 store",
+        "Staff accounts (1)",
+        "5 products",
+        "Deewid payments",
+        "Sell via payment link",
+        "24/7 chat & call support"
+      ]
+    },
+    {
+      "name": "Starter",
+      "price": "19",
+      "description": "For solo entrepreneurs",
+      "buttonText": "Get started",
+      "isMostPopular": false,
+      "features": [
+        "Custom domain",
+        "2 stores",
+        "Staff accounts (5)",
+        "100 products",
+        "AI store builder",
+        "App Marketplace",
+        "Abandoned cart saver",
+        "Social selling tools",
+        "Deewid payments",
+        "3rd party payments",
+        "Sell via payment link",
+        "24/7 chat & call support"
+      ]
+    },
+    {
+      "name": "Business",
+      "price": "59",
+      "description": "For solo e-commerce stores",
+      "buttonText": "Get started",
+      "isMostPopular": true,
+      "features": [
+        "Custom domain",
+        "4 stores",
+        "Staff accounts (5)",
+        "100 products",
+        "AI store builder",
+        "App Marketplace",
+        "Abandoned cart saver",
+        "Social selling tools",
+        "Pos integration",
+        "Progressive web app (PWA)",
+        "Deewid payments",
+        "3rd party payments",
+        "Sell via payment link",
+        "24/7 chat & call support"
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": "199",
+      "description": "For solo entrepreneurs",
+      "buttonText": "Get started",
+      "isMostPopular": false,
+      "features": [
+        "Custom domain",
+        "10 stores",
+        "Staff accounts (10)",
+        "10000 products",
+        "AI store builder",
+        "App Marketplace",
+        "Abandoned cart saver",
+        "Social selling tools",
+        "Pos integration",
+        "Progressive web app (PWA)",
+        "Sell via branded mobile app",
+        "Deewid payments",
+        "3rd party payments",
+        "Dedicated account manager",
+        "Sell via payment link",
+        "24/7 chat & call support"
+      ]
+    }
+  ]
+}
+

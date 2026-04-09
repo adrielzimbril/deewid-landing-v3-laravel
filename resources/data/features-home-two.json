@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "icon": "waterdrop-1",
+      "name": "Intuitive Design",
+      "description": "Build your dream store with a user-friendly drag-and-drop interface, no coding skills required."
+    },
+    {
+      "icon": "money",
+      "name": "Localized Payment Gateways",
+      "description": "Support local payment gateways tailored to each country for a seamless transaction experience."
+    },
+    {
+      "icon": "columns-fill",
+      "name": "Integrated Payments",
+      "description": "Simplify transactions with our integrated payment gateways, ensuring secure and smooth checkouts."
+    },
+    {
+      "icon": "layout-wtf",
+      "name": "Third-Party Integrations",
+      "description": "Easily integrate with third-party tools and services to enhance the functionality of your online store."
+    },
+    {
+      "icon": "chart-square",
+      "name": "Real-Time Analytics",
+      "description": "Gain valuable insights into your store's performance with our comprehensive analytics dashboard."
+    },
+    {
+      "icon": "devices",
+      "name": "Mobile Optimization",
+      "description": "Reach customers on the go with a mobile-optimized store for a seamless shopping experience."
+    }
+  ]
+}
+
