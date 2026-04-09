@@ -12,7 +12,7 @@ Version Laravel de Deewid. Ce depot prolonge les versions front statiques en une
 - landing Deewid rendue avec Blade
 - pages `home`, `pricing`, `company`, `blog`, `store-not-found` et `store-unavailable`
 - base Laravel pour faire evoluer le produit
-- routes d'application reservees pour `deewid-landing-v3-laravel.adrielzimbril.com`
+- routes d'application reservees pour `https://deewid-landing-v3-laravel.adrielzimbril.com/`
 
 ## Stack
 
@@ -78,3 +78,4 @@ Projet maintenu par Oricodes.
 ## Licence
 
 MIT. Voir `LICENSE`.
+

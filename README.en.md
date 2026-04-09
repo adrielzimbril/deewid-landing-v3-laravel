@@ -12,7 +12,7 @@ Laravel version of Deewid. This repository extends the static front-end versions
 - Deewid landing rendered with Blade
 - `home`, `pricing`, `company`, `blog`, `store-not-found`, and `store-unavailable` pages
 - Laravel application base for future product work
-- reserved application routes for `deewid-landing-v3-laravel.adrielzimbril.com`
+- reserved application routes for `https://deewid-landing-v3-laravel.adrielzimbril.com/`
 
 ## Stack
 
@@ -78,3 +78,4 @@ Maintained by Oricodes.
 ## License
 
 MIT. See `LICENSE`.
+
