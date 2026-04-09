@@ -1,5 +1,6 @@
-﻿FROM composer:2 AS composer
+﻿FROM php:8.4-cli-bookworm AS composer
 WORKDIR /app
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader --no-scripts
 
@@ -33,4 +34,3 @@ ENV APP_DEBUG=false
 EXPOSE 10000
 
 CMD ["./render-start.sh"]
-

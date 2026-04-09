@@ -10,6 +10,10 @@ services:
         value: production
       - key: APP_DEBUG
         value: "false"
+      - key: APP_URL
+        value: https://deewid-landing-v3.adrielzimbril.com
+      - key: DEEWID_APP_DOMAIN
+        value: deewid-landing-v3.adrielzimbril.com
       - key: DB_CONNECTION
         value: pgsql
       - key: LOG_CHANNEL
@@ -18,10 +22,10 @@ services:
         value: info
       - key: SESSION_DRIVER
         value: cookie
-      - key: CACHE_STORE
-        value: database
+      - key: CACHE_DRIVER
+        value: file
       - key: QUEUE_CONNECTION
-        value: database
+        value: sync
       - key: DATABASE_URL
         sync: false
       - key: APP_KEY

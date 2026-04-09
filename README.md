@@ -55,6 +55,7 @@ php artisan test
 - Le repo inclut un `Dockerfile`, `.dockerignore`, `render-start.sh` et `render.yaml`.
 - Le runtime Docker est aligne sur PHP 8.4 pour etre compatible avec les dependances lockees.
 - `APP_KEY` et `DATABASE_URL` doivent etre renseignes dans Render.
+- En cas de `500`, verifier en premier: `APP_KEY`, `DATABASE_URL`, et que le dernier deploy utilise bien la nouvelle image Docker.
 
 ## Versions Deewid
 

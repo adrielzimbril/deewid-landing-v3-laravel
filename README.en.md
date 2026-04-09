@@ -55,6 +55,7 @@ php artisan test
 - The repository includes `Dockerfile`, `.dockerignore`, `render-start.sh`, and `render.yaml`.
 - The Docker runtime is aligned to PHP 8.4 to match locked dependency requirements.
 - `APP_KEY` and `DATABASE_URL` must be configured in Render.
+- If you still get `500`, check first: `APP_KEY`, `DATABASE_URL`, and that the latest deploy used the updated Docker image.
 
 ## Deewid versions
 
