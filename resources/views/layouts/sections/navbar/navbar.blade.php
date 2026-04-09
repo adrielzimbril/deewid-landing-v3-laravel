@@ -16,6 +16,9 @@
             <a class="nav-link" href="{{ route('pricing') }}">{{ __('Pricing') }}</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ route('cta.variants') }}">{{ __('CTA Variants') }}</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('store.not-found') }}">{{ __('Store Not Found') }}</a>
           </li>
           <li class="nav-item">
@@ -67,6 +70,9 @@
 
         <li class="nav-item">
           <a class="nav-link" href="{{ route('pricing') }}">{{ __('Pricing') }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('cta.variants') }}">{{ __('CTA Variants') }}</a>
         </li>
 
         <li class="nav-item">

@@ -30,6 +30,7 @@ if ($blogDatabaseEnabled) {
 }
 
 Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
+Route::view('/cta-variants', 'content.cta-variants')->name('cta.variants');
 Route::get('/company', [CompanyController::class, 'index'])->name('company');
 Route::view('/store-not-found', 'content.store-not-found')->name('store.not-found');
 Route::view('/store-unavailable', 'content.store-unavailable')->name('store.unavailable');
